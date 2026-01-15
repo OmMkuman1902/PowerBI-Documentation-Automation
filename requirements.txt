@@ -2,11 +2,9 @@ Kaleido
 pandas
 dotenv
 numpy
-json
 msal
 requests
 streamlit
-json
 os
 tempfile
 shutil
