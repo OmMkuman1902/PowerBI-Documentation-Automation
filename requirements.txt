@@ -1,0 +1,16 @@
+Kaleido
+pandas
+dotenv
+numpy
+json
+msal
+requests
+streamlit
+json
+os
+tempfile
+shutil
+datetime
+base64
+time
+re
