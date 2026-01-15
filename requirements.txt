@@ -9,4 +9,4 @@ matplotlib
 openpyxl
 python-docx
 networkx 
-collections
+msal
