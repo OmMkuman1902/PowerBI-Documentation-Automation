@@ -15,7 +15,7 @@ from config import TENANT_ID,CLIENT_ID,CLIENT_SECRET,AUTHORITY,SCOPE,POWERBI_SCO
 # ---------------------------------------------------------
 def get_token(scope=None):
     if scope is None:
-        scope = SCOPE
+        scope = ["https://api.fabric.microsoft.com/.default"]
     
     app = msal.ConfidentialClientApplication(
         client_id=CLIENT_ID,
