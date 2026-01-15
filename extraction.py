@@ -20,7 +20,8 @@ def get_token(scope=None):
     app = msal.ConfidentialClientApplication(
         client_id=CLIENT_ID,
         client_credential=CLIENT_SECRET,
-        authority=AUTHORITY,
+        authority=f"https://login.microsoftonline.com/{TENANT_ID}"
+,
     )
     tok = app.acquire_token_for_client(scopes=scope)
     if "access_token" not in tok:
