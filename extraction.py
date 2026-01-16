@@ -6,10 +6,14 @@ load_dotenv()
 import json
 import base64
 import re,os
-from config import TENANT_ID,CLIENT_ID,CLIENT_SECRET,AUTHORITY,SCOPE,POWERBI_SCOPE,BASE,WORKSPACE_ID
+from config import TENANT_ID,CLIENT_ID,CLIENT_SECRET#,AUTHORITY,SCOPE,POWERBI_SCOPE,BASE,WORKSPACE_ID
 
 
+AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
+#SCOPE = ["https://api.fabric.microsoft.com/.default"]
 
+BASE = "https://api.fabric.microsoft.com/v1"
+WORKSPACE_ID = "bdd4cd59-3a78-414a-8fac-813eb25ad20e"
 
 
 # ---------------------------------------------------------
