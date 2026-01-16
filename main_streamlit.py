@@ -172,7 +172,7 @@ if 'semantic_models_index' not in st.session_state:
 # HELPER FUNCTIONS
 # =========================================================
 def create_output_folder():
-    """Create output folder in C:\Temp"""
+   
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_path = os.path.join(OUTPUT_FOLDER, f"extraction_{timestamp}")
     os.makedirs(output_path, exist_ok=True)

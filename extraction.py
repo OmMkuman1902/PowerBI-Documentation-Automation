@@ -1,6 +1,8 @@
 import requests
 import msal
 import time
+from  dotenv import load_dotenv
+load_dotenv()
 import json
 import base64
 import re,os
@@ -786,5 +788,7 @@ def build_semantic_model_json(MODEL_ID):
 #         with open("3_semantic_model_info.json", "w") as f:
 #             json.dump(semantic_model_json, f, indent=2)
 #         print("\n✅ Semantic model info saved to: 3_semantic_model_info.json")
-
-        
+# if __name__ == "__main__":
+#     print("WORKSPACE_ID:", WORKSPACE_ID)
+#     print("Type:", type(WORKSPACE_ID))
+#     print(TENANT_ID)
